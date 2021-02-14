@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Productivity Timer ⏳</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'style.css')}}">
+  </head>
+
+  <body>
+    <h1>I'm so gay guys 😎</h1>
+    <img  src="{{ url_for('static', filename= 'images/clock-png.webp')}}" height="200" width="200" alt="image pfp">
+
+  <hr>
+    <p> Hi! Welcome to this productivity app! This an incentive-based app that will assist you in getting your work done!
+        To work this app, please check any one of the following tasks you want to accomplish.
+    </p>
+    <br><hr>
+    <h3>Task's Needed to be Accomplished</h3>
+    <p><em>What would you like to accomplish?</em></p>
+
+
+
+
+    <input form="myForm" type="checkbox" name="tasks" value="Homework"> Homework
+    <input form="myForm" type="checkbox" name="tasks" value="Lectures"> Lectures
+    <input form="myForm" type="checkbox" name="tasks" value="Reading"> Reading
+
+  <br><br><hr>
+
+  <h3>State your specfic tasks here!</h3>
+  <form>
+  <label for="task1">Task #1:</label>
+  <input type="text" id="task1" name="task1"><br><br>
+  <label for="task2">Task #2:</label>
+  <input type="text" id="task2" name="task2"><br><br>
+  <label for="task3">Task #3:</label>
+  <input type="text" id="task3" name="task3"><br><br>
+  <input type="submit" value="Submit">
+  </form>
+
+  <br><hr>
+
+  <h3>What are some activites you do to relieve stress?</h3>
+
+  <input form="myForm" type="checkbox" name="activites" value="Go outside"> Go outside
+  <input form="myForm" type="checkbox" name="activites" value="Be creative"> Be creative
+  <input form="myForm" type="checkbox" name="activites" value="Have a snack"> Have a snack
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+  
+  <hr>
+
+
+  <h2><strong>Countdown Clock</strong></h2>
+  <div id="clockdiv">
+    <div>
+        <span class="days"></span>
+        <div class="smalltext">Days</div>
+    </div>
+    <div>
+        <span class="hours"></span>
+        <div class="smalltext">Hours</div>
+    </div>
+    <div>
+        <span class="minutes"></span>
+        <div class="smalltext">Minutes</div>
+    </div>
+    <div>
+        <span class="seconds"></span>
+        <div class="smalltext">Seconds</div>
+    </div>
+  <div id="timerdiv"></div>
+</div>
+  <script src ="{{ url_for('static', filename= 'main.js')}}"></script>
+
+  <p>Scientific research has shown that 25 minutes of productivity allows for the greatest usage of brain power</p>
+
+  </body>
+</html>
